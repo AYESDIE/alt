@@ -35,3 +35,5 @@ install(FILES ${CMAKE_SOURCE_DIR}/include/alt.hpp
         DESTINATION "${CMAKE_INSTALL_PREFIX}/include")
 
 enable_testing()
+
+add_subdirectory(tests)
