@@ -19,4 +19,6 @@
 
 #include "alt_bits/log.hpp"
 
+#include "alt_bits/insertion_sort/insertion_sort.hpp"
+
 #endif
