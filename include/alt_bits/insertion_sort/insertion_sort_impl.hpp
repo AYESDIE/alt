@@ -1,5 +1,5 @@
 //
-// Created by ayesdie on 26/5/19.
+// author: ayesdie
 //
 
 #ifndef ALT_INSERTION_SORT_INSERTION_SORT_IMPL_HPP
