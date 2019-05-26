@@ -22,4 +22,9 @@ TEST_CASE("InsertionSortTest", "[InsertionSortTest]")
   {
     REQUIRE(sortedX[i] == X[i]);
   }
+
+  InsertionSort(X, false);
+  for (int j = 0; j < X.size(); ++j) {
+    REQUIRE(sortedX[X.size() - j - 1] == X[j]);
+  }
 }

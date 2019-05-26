@@ -5,6 +5,8 @@
 #ifndef ALT_SORT_SORT_POLICY_INSERTION_SORT_POLICY_IMPL_HPP
 #define ALT_SORT_SORT_POLICY_INSERTION_SORT_POLICY_IMPL_HPP
 
+#include <algorithm>
+
 namespace alt
 {
 namespace sort
@@ -21,13 +23,16 @@ InsertionSortPolicy::InsertionSortPolicy(std::vector<VecType>& Vec,
 
     size_t i = j - 1;
 
-    while ((i >= 0) && ((non_decreasing) ? (Vec[i] > key) : (Vec[i] < key)))
+    while ((i >= 0) && (Vec[i] > key))
     {
       Vec[i + 1] = Vec[i];
       i = i - 1;
     }
     Vec[i + 1] = key;
   }
+
+  if (!non_decreasing)
+    std::reverse(Vec.begin(), Vec.end());
 }
 
 } // namespace sort
