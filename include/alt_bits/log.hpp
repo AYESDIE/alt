@@ -1,3 +1,6 @@
+//
+// author: ayesdie
+//
 
 #ifndef ALT_LOG_HPP
 #define ALT_LOG_HPP
