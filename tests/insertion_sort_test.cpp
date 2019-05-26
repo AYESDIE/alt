@@ -15,11 +15,16 @@ TEST_CASE("InsertionSortTest", "[InsertionSortTest]")
   vector<int> sortedX({1, 3, 4, 6, 8, 9});
 
   // Calls the function
-  InsertionSort(X);
+  InsertionSort(X, true);
 
   // Checks the Result
   for (int i = 0; i < X.size(); ++i)
   {
     REQUIRE(sortedX[i] == X[i]);
+  }
+
+  InsertionSort(X, false);
+  for (int j = 0; j < X.size(); ++j) {
+    REQUIRE(sortedX[X.size() - j - 1] == X[j]);
   }
 }
