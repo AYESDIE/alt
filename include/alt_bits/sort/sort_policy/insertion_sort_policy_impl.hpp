@@ -2,10 +2,8 @@
 // author: ayesdie
 //
 
-#ifndef ALT_INSERTION_SORT_INSERTION_SORT_IMPL_HPP
-#define ALT_INSERTION_SORT_INSERTION_SORT_IMPL_HPP
-
-#include "insertion_sort.hpp"
+#ifndef ALT_SORT_SORT_POLICY_INSERTION_SORT_POLICY_IMPL_HPP
+#define ALT_SORT_SORT_POLICY_INSERTION_SORT_POLICY_IMPL_HPP
 
 namespace alt
 {
@@ -13,8 +11,8 @@ namespace sort
 {
 
 template <typename VecType>
-void InsertionSort(std::vector<VecType>& Vec,
-                   bool non_decreasing)
+InsertionSortPolicy::InsertionSortPolicy(std::vector<VecType>& Vec,
+                                         bool non_decreasing)
 {
   for (size_t j = 1; j < Vec.size(); ++j) {
     // Insert Vec[j] into the sorted sequence
@@ -36,4 +34,4 @@ void InsertionSort(std::vector<VecType>& Vec,
 } // namespace alt
 
 
-#endif //ALT_INSERTION_SORT_INSERTION_SORT_IMPL_HPP
+#endif //ALT_SORT_SORT_POLICY_INSERTION_SORT_POLICY_IMPL_HPP

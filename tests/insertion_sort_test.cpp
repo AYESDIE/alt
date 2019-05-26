@@ -15,7 +15,7 @@ TEST_CASE("InsertionSortTest", "[InsertionSortTest]")
   vector<int> sortedX({1, 3, 4, 6, 8, 9});
 
   // Calls the function
-  InsertionSort(X);
+  InsertionSort(X, true);
 
   // Checks the Result
   for (int i = 0; i < X.size(); ++i)
