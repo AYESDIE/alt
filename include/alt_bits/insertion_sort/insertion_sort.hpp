@@ -10,15 +10,13 @@ namespace alt
 namespace sort
 {
 
-class InsertionSort
-{
-public:
-  InsertionSort()
-  {
-    std::cout<<"base";
-  }
-};
+template <typename VecType>
+void InsertionSort(std::vector<VecType>&,
+                   bool non_decreasing = true);
 
 } // namespace sort
 } // namespace alt
+
+#include "insertion_sort_impl.hpp"
+
 #endif
