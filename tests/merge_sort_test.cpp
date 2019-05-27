@@ -31,9 +31,4 @@ TEST_CASE("MergeSortTest", "[MergeSortTest]")
   {
     REQUIRE(sortedX[X.size() - j - 1] == X[j]);
   }
-
-  for (int j = 0; j < X.size(); ++j) {
-    cout << X[j] << " ";
-  }
-
 }
