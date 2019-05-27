@@ -12,6 +12,8 @@ namespace sort
 
 typedef Sort<InsertionSortPolicy> InsertionSort;
 
+typedef Sort<MergeSortPolicy> MergeSort;
+
 }
 
 }
