@@ -6,6 +6,7 @@
 #define ALT_SORT_SORT_HPP
 
 #include "sort_policy/insertion_sort_policy.hpp"
+#include "sort_policy/merge_sort_policy.hpp"
 
 namespace alt
 {
@@ -19,7 +20,7 @@ public:
   template <typename VecType>
   Sort(std::vector<VecType>& vec,
        bool non_decreasing,
-       SortPolicy Sorter = InsertionSortPolicy());
+       SortPolicy Sorter);
 };
 
 }
